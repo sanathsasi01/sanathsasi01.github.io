@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo:wght@100;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Exo', sans-serif;
+    /* overflow-x: hidden; */
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+}
+.mainContainer {
+    width:100vw;
+    height: 100vh;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+}
+
+/* ==============header styles =============== */
+
+.one {
+    /* background-color: #F0F5F9; */
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav  {
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+#resume {
+    padding: .8rem 3rem;
+    /* float: right; */
+    border: 4px solid white;
+    color: rebeccapurple;
+    background-color: transparent;
+    outline: none;
+    margin: 1rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    display: inline-block;
+    visibility: hidden;
+}
+#resume:hover {
+    cursor: pointer;
+    background-color: rebeccapurple;
+    color: white;
+}
+header p {
+    color: black;
+}
+#name {
+    color: rebeccapurple;
+    font-weight: 600;
+    font-size: 3rem;
+}
+header {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    letter-spacing: .2rem;
+    /* border: 1px solid red; */
+}
+header p:nth-child(1) {
+    font-size: 3rem;
+    /* line-height: 5rem; */
+    font-weight: 400;
+}
+#typingText {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+#arrowContainer {
+    margin: 8rem 0;
+}
+.fa-chevron-down {
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+    visibility: hidden;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 15px;
+    }
+  }
+
+@media screen and (max-width:450px) {
+    header {
+        width: 100%;
+        padding: 0 20px;
+    }
+    * {
+        font-size: 14px;
+    }
+    header p:nth-child(1) {
+        line-height: 3rem;
+        /* border: 1px solid red; */
+    }
+    header div p {
+        text-align: left;
+        padding: 1rem;
+    }
+    #resume {
+        float: left;
+        margin: 1rem 0;
+        padding: .6rem 2rem;
+    }
+    #arrowContainer {
+        margin: 10rem 0;
+    }
+}
+
+
+/* =========About me =============== */
+.two, .three {
+    /* background-color: #ffffff; */
+    background-color: #F0F5F9;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.two div, .three #projectsContainer {
+    width: 70%;
+    margin: auto;
+}
+
+#aboutme-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+    letter-spacing: .5rem;
+}
+#about-me {
+    padding: 2rem 0;
+    letter-spacing: .15rem;
+    width: 90%;
+}
+#technologies {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+}
+.tech-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.two img {
+    margin: 1rem;
+    /* width: 20%; for small screen */
+}
+
+
+@media screen and (max-width:640px) {
+    .two div {
+        width: 90%;
+    }
+    .two img {
+        width: 20%;
+    }
+}
+
+
+/* =========projects ========== */
+.three {
+    background-color: #D6E0F0;
+    padding: 2rem 0;
+}
+
+/* ? card style */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+.card {
+    padding: 1rem;
+}
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    /* perspective: 1000px; */
+    /* border: 1px solid red; */
+    cursor: pointer;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    text-align: left;
+  }
+  .flip-card-back p {
+      font-weight: 200;
+  }
+
+
+@media screen and (max-width:773px) {
+    .three #projectsContainer {
+        width: 80%;
+    }
+    .card {
+        margin: auto;
+    }
+}
+@media screen and (max-width: 580px) {
+    .flip-card {
+        width: 250px;
+        /* height: 80vh; */
+    }
+    .card {
+        padding:  1rem .5rem;
+    }
+}
+@media screen and (max-width: 1326px) {
+    .three {
+        height: auto;
+    }
+}
+/* ? card style end */
+
+
+
+
+/* contact form */
+
+.four {
+    background-color: #30475E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-container {
+    background-color: grey;
+    width: 70%;
+}
+.Contact-container input {
+    width: 50%;
+}
+#form-name-container {
+    display: flex;
+    width: 800px;
+}
