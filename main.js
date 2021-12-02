@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "And, I'm a Software Developer !";
+var txt = "And, I'm a Software Developer!";
 var speed = 50;
 
 window.onload = function() {
@@ -32,16 +32,18 @@ function openCity(evt, cityName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
 
 function toggleTheme(event) {
-  // event.preventDefault()
-  var text = document.getElementById('toggleTheme')
-  if (text.innerHTML == 'DARK THEME') {
-    text.innerHTML = "LIGHT THEME"
-  }else {
-    text.innerHTML = "DARK THEME"
+  var button = document.getElementsByClassName('toggleText')
+  for(var i=0; i<button.length; i++) {
+    if (button[i].innerHTML == 'DARK THEME') {
+        button[i].innerHTML = "LIGHT THEME"
+      }else {
+        button[i].innerHTML = "DARK THEME"
+      }
   }
+
 }
 function OpenNav() {
   // document.getElementById('toggleButton').style.display = "none"

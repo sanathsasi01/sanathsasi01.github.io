@@ -16,6 +16,12 @@
             <div id="closeNav">
                 <button onclick="CloseNav()">.close( )</button>
             </div>
+            <ul id="overlayNav">
+                <li> <a href="">.work()</a> </li>
+                <li> <a href="">.tools()</a> </li>
+                <li> <a href="">.contact()</a> </li>
+                <li> <a id="NavtoggleTheme" class="toggleText" onclick="toggleTheme()">DARK THEME</a> </li>
+            </ul>
         </div>
         <nav>
             <div id="nav-inner-container">
@@ -23,10 +29,10 @@
                     <a href="">Sanath.Sasi</a>
                 </div>
                 <ul id="navlinks">
-                    <li> <a id="toggleTheme" onclick="toggleTheme()">DARK THEME</a> </li>
-                    <li> <a href="">.work()</a> </li>
-                    <li> <a href="">.tools()</a> </li>
+                    <li> <a id="toggleTheme" class="toggleText" onclick="toggleTheme()">DARK THEME</a> </li>
                     <li> <a href="">.contact()</a> </li>
+                    <li> <a href="">.tools()</a> </li>
+                    <li> <a href="">.work()</a> </li>
                 </ul>
                 <div id="toggleButton">
                     <button onclick="OpenNav()">.find( )</button>
@@ -38,14 +44,16 @@
                 <div>
                     <p>Hello, I'm <span id="name">Sanath</span></p>
                     <p id="typingText"></p>
-                    <!-- <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" target="blank">MY RESUME</a> -->
+                    <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" target="blank">MY RESUME</a>
                     <div id="arrowContainer">
-                        <i class="fas fa-chevron-down" id="arrow"></i>
+                        <!-- <i class="fas fa-chevron-down" id="arrow"></i> -->
+                        <!-- <i class="fas fa-long-arrow-alt-down" id="arrow"></i> -->
+                        <i class="fas fa-angle-double-down" id="arrow"></i>
                     </div>
                 </div>
             </header>
         </section>
-      
+    </div>
 
     <script src="main.js"></script>
 </body>
