@@ -12,10 +12,31 @@
 </head>
 <body>
     <div class="mainContainer">
+        <div id="overlay">
+            <div id="closeNav">
+                <button onclick="CloseNav()">.close( )</button>
+            </div>
+        </div>
+        <nav>
+            <div id="nav-inner-container">
+                <div id="brand">
+                    <a href="">Sanath.Sasi</a>
+                </div>
+                <ul id="navlinks">
+                    <li> <a id="toggleTheme" onclick="toggleTheme()">DARK THEME</a> </li>
+                    <li> <a href="">.work()</a> </li>
+                    <li> <a href="">.tools()</a> </li>
+                    <li> <a href="">.contact()</a> </li>
+                </ul>
+                <div id="toggleButton">
+                    <button onclick="OpenNav()">.find( )</button>
+                </div>
+            </div>
+        </nav>
         <section class="one">
             <header>
                 <div>
-                    <p>Hello, I'm <span id="name">Sanath Sasi</span></p>
+                    <p>Hello, I'm <span id="name">Sanath</span></p>
                     <p id="typingText"></p>
                     <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" target="blank">MY RESUME</a>
                     <div id="arrowContainer">
@@ -24,104 +45,7 @@
                 </div>
             </header>
         </section>
-        <section class="two">
-            <div>
-                <p id="aboutme-heading">About Me</p>
-                <p id="about-me">
-                    I am a <b>&ltWeb Developer /></b> by designation.
-                   I value my time and deeply confident in my skills. Technologies and Languages that I am confident in are Python, Django and Django Rest Framework. Also the basics of frontend web development including HTML, CSS, JavaScript and ReactJs.
-                </p>
-                <p id="technologies">Some technologies and languages I have worked with </p>
-                <div class="tech-icons" style="width: 100%;padding: 0;">
-                    <img src="https://img.icons8.com/color/96/000000/django.png"/>
-                    <img src="https://www.django-rest-framework.org/img/logo.png" alt="drf" width="100">
-                    <img src="https://img.icons8.com/color/96/000000/postgreesql.png" width="70"/>
-                    <img src="https://docs.celeryproject.org/en/stable/_static/celery_512.png" width="90"/>
-                    <img src="https://img.icons8.com/color/96/000000/css3.png" width="70"/>
-                    <img src="https://img.icons8.com/color/100/000000/javascript--v1.png"  width="70"/>
-                </div>
-            </div>
-        </section>
-        <section class="three">
-            <div id="projectsContainer">
-                <p id="aboutme-heading">My Projects</p>
-                <!-- first card -->
-                <!-- <div class="cards">
-                    <div class="card">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div class="project-desc">
-                                        <h1>EC COVID</h1> 
-                                        <p>This was my first live project.This web app was a hospital management system, that helped the doctors to focus on their job while the app handled all other parts for them. </p>   
-                                    </div>                             
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Ec Covid</button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')">SmartBirth</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Game Backend</button>
-                    <button class="tablinks" onclick="openCity(event, 'weather')">Wheather App</button>
-                </div>
-                <div id="London" class="tabcontent">
-                    <h3>Ec Covid</h3>
-                    <p>London is the capital city of England.</p>
-                    <div>
-                        <a href=""> <b>&lt Code /></b> </a>
-                        <a href="">Visit</a>
-                    </div>  
-                </div>
-                  
-                <div id="Paris" class="tabcontent">
-                    <h3>SmartBirth</h3>
-                    <p>Paris is the capital of France.</p> 
-                    <div>
-                        <a href=""> <b>&lt Code /></b> </a>
-                        <a href="">Visit</a>
-                    </div> 
-                </div>
-                  
-                <div id="Tokyo" class="tabcontent">
-                    <h3>Game Backend</h3>
-                    <p>Tokyo is the capital of Japan.</p>
-                    <div>
-                        <a href=""> <b>&lt Code /></b> </a>
-                        <a href="">Visit</a>
-                    </div> 
-                </div>
-
-                <div id="weather" class="tabcontent">
-                    <h3>Wheather App</h3>
-                    <p>Tokyo is the capital of Japan.</p>
-                    <div>
-                        <a href=""> <b>&lt Code /></b> </a>
-                        <a href="">Visit</a>
-                    </div> 
-                </div>
-                
-            </div>
-        </section>
-        <section class="four">
-            <div class="Contact-container">
-                <h1>Contact me</h1>
-                <form action="">
-                    <input type="email" name="email" id="email" placeholder="E-mail"> <br>
-                    <div id="form-name-container">
-                        <input type="text" name="firstname" id="firstname" placeholder="First name"> <br>
-                        <input type="text" name="lastname" id="lastname" placeholder="Last name"> <br>
-                    </div>
-                    <input type="number" name="number" id="number" placeholder="Number"> <br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
-                    <button>Send</button>
-                </form>
-            </div>
-        </section>
-    </div>
+      
 
     <script src="main.js"></script>
 </body>

@@ -33,3 +33,22 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+function toggleTheme(event) {
+  // event.preventDefault()
+  var text = document.getElementById('toggleTheme')
+  if (text.innerHTML == 'DARK THEME') {
+    text.innerHTML = "LIGHT THEME"
+  }else {
+    text.innerHTML = "DARK THEME"
+  }
+}
+function OpenNav() {
+  // document.getElementById('toggleButton').style.display = "none"
+  document.getElementById('overlay').style.visibility = "visible"
+}
+
+function CloseNav() {
+  // document.getElementById('toggleButton').style.display = "block"
+  document.getElementById('overlay').style.visibility = "hidden"
+}
