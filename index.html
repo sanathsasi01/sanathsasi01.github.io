@@ -10,50 +10,124 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Sanath sasi</title>
 </head>
-<body>
+<body id="body">
+    <a class="toggleText" style="display: none;"></a>
     <div class="mainContainer">
         <div id="overlay">
             <div id="closeNav">
                 <button onclick="CloseNav()">.close( )</button>
             </div>
             <ul id="overlayNav">
-                <li> <a href="">.work()</a> </li>
+                <li> <a href="#projects">.work()</a> </li>
                 <li> <a href="">.tools()</a> </li>
                 <li> <a href="">.contact()</a> </li>
-                <li> <a id="NavtoggleTheme" class="toggleText" onclick="toggleTheme()">DARK THEME</a> </li>
+                <li> <a id="NavtoggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li>
             </ul>
         </div>
-        <nav>
+        <nav id="nav">
             <div id="nav-inner-container">
                 <div id="brand">
-                    <a href="">Sanath.Sasi</a>
+                    <a href="" class="toggletextColor">Sanath.Sasi</a>
                 </div>
                 <ul id="navlinks">
-                    <li> <a id="toggleTheme" class="toggleText" onclick="toggleTheme()">DARK THEME</a> </li>
-                    <li> <a href="">.contact()</a> </li>
-                    <li> <a href="">.tools()</a> </li>
-                    <li> <a href="">.work()</a> </li>
+                    <li> <a id="toggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li>
+                    <li> <a href="" class="toggletextColor">.contact()</a> </li>
+                    <li> <a href="" class="toggletextColor">.tools()</a> </li>
+                    <li> <a href="#projects" class="toggletextColor">.work()</a> </li>
                 </ul>
                 <div id="toggleButton">
-                    <button onclick="OpenNav()">.find( )</button>
+                    <button class="toggletextColor" onclick="OpenNav()">.find( )</button>
                 </div>
             </div>
         </nav>
         <section class="one">
             <header>
                 <div>
-                    <p>Hello, I'm <span id="name">Sanath</span></p>
-                    <p id="typingText"></p>
-                    <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" target="blank">MY RESUME</a>
+                    <p class="toggletextColor">Hello, I'm <span id="name">Sanath Sasi</span></p>
+                    <p id="typingText" class="toggletextColor"></p>
+                    <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" class="toggletextColor" target="blank">MY RESUME</a>
                     <div id="arrowContainer">
-                        <!-- <i class="fas fa-chevron-down" id="arrow"></i> -->
-                        <!-- <i class="fas fa-long-arrow-alt-down" id="arrow"></i> -->
-                        <i class="fas fa-angle-double-down" id="arrow"></i>
+                        <i class="fas fa-angle-double-down toggletextColor" id="arrow"></i>
                     </div>
                 </div>
             </header>
         </section>
     </div>
+
+    <div class="projects" id="projects">
+        <p id="wrapper">  &lt;wrapper id="projects"></p>
+        <div class="project">
+            <div class="project-img project-img-one"></div>
+            <div class="project-texts">
+                <h1>Ec Covid</h1>
+                <p class="comments">//Tech Stack</p>
+                <div class="tech-stacks">
+                    <div><p class="tech-stack">Django</p></div>
+                    <div><p class="tech-stack">Postgresql</p></div>
+                    <div><p class="tech-stack">JavaScript</p></div>
+                    <div><p class="tech-stack">jQuery</p></div>
+                    <div><p class="tech-stack">Ajax</p></div>
+                </div>
+                <p class="toggletextColor project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum nesciunt cumque veritatis ducimus illo pariatur, assumenda accusantium suscipit obcaecati debitis blanditiis doloremque laboriosam ipsum?
+                </p>
+                <!-- <p class="comments">// See it in action ?</p> -->
+                <p class="comments">// This project is either under an NDA or being used privately in the wild.</p>
+            </div>
+        </div>
+        <!-- second project -->
+        <div class="project">
+            <div class="project-img project-img-two"></div>
+            <div class="project-texts">
+                <h1>SmartBirth</h1>
+                <p class="comments">//Tech Stack</p>
+                <div class="tech-stacks">
+                    <div><p class="tech-stack">Django</p></div>
+                    <div><p class="tech-stack">Django Rest Framework</p></div>
+                    <div><p class="tech-stack">Postgresql</p></div>
+                    <div><p class="tech-stack">Celery</p></div>
+                    <div><p class="tech-stack">Rabbitmq</p></div>
+                </div>
+                <p class="toggletextColor project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum nesciunt cumque veritatis ducimus illo pariatur, assumenda accusantium 
+                </p>
+                <p class="comments">// See it in action</p>
+                <p class="comments">// This project is either under an NDA or being used privately in the wild.</p>
+            </div>
+        </div>
+        <!-- thrid project -->
+        <div class="project">
+            <div class="project-img project-img-three">
+            </div>
+            <div class="project-texts">
+                <h1>A Simple Weather App</h1>
+                <p class="comments">//Tech Stack</p>
+                <div class="tech-stacks">
+                    <div><p class="tech-stack">React</p></div>
+                    <div><p class="tech-stack">Axios</p></div>
+                    <div><p class="tech-stack">Css</p></div>
+                    <div><p class="tech-stack">Weather API</p></div>
+                    <div><p class="tech-stack">Netlify</p></div>
+                </div>
+                <p class="toggletextColor project-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum nesciunt cumque veritatis ducimus illo pariatur, assumenda accusantium suscipit obcaecati debitis blanditiis doloremque laboriosam ipsum?
+                </p>
+                <p class="comments">// See it in action</p>
+                <div class="project-links">
+                    <a href="https://my-first-whether-app.netlify.app" target="blank">
+                        visit the site <i class="fas fa-link"></i>
+                    </a>
+                    <a href="https://github.com/sanathsasi01/Open-Weather.git"  target="blank">
+                        see the code <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+        <p id="wrapper">&lt;/wrapper></p>
+
+    </div>
+
 
     <script src="main.js"></script>
 </body>
