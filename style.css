@@ -37,8 +37,14 @@ html {
 .blackBackground {
     background-color: var(--background-black);
 }
+.whiteBackground {
+    background-color: white;
+}
 .TextColorSwitch {
     color: white;
+}
+.whiteTextToggle {
+    color: black;
 }
 /* nav {
     background-color: #171414;
@@ -242,7 +248,7 @@ header p:nth-child(1) {
 #typingText {
     font-size: 1.7rem;
     margin: 1rem 0;
-    font-weight: 700;
+    font-weight: 400;
 }
 #arrowContainer {
     margin: 8rem 1rem;
@@ -288,13 +294,13 @@ header p:nth-child(1) {
 
 
 /* projects styles */
-.projects {
+.wrapper-container {
     /* background-color: rebeccapurple; */
     width: 80%;
-    margin: 2% auto;
+    margin: 4% auto;
 }
 
-.projects #wrapper {
+#wrapper {
     color: var(--main-theme-color);
     font-weight: 700;
     font-size: 2rem;
@@ -304,7 +310,9 @@ header p:nth-child(1) {
 .project {
     display: flex;
     flex-wrap: wrap;
-    margin: 8% 2%;
+    /* margin: 8% 2%; */
+    width: 95%;
+    margin: 8% auto;
 }
 .project-img {
     width: 50%;
@@ -314,7 +322,7 @@ header p:nth-child(1) {
     height: 400px;
 }
 .project-img-one {
-    background-image: url('images/banner-covid-19-1280x549.jpg');
+    background-image: url('Images/banner-covid-19-1280x549.jpg');
 
 }
 .project-texts {
@@ -366,10 +374,10 @@ header p:nth-child(1) {
     line-height: 1.5rem;
 }
 .project-img-two {
-    background-image: url('images/Caesar-Salad-1280x720.jpg');
+    background-image: url('Images/Caesar-Salad-1280x720.jpg');
 }
 .project-img-three {
-    background-image: url('images/background.jpg');
+    background-image: url('Images/background.jpg');
 }
 @media screen and (max-width:1125px) {
     .project-img {
@@ -383,4 +391,82 @@ header p:nth-child(1) {
         margin: 1% 0;
     }
     
+}
+
+
+/* about */
+#about {
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    /* margin: % 2%; */
+
+}
+.about-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    /* letter-spacing: .1%; */
+    /* margin: 1rem; */
+    padding: .5rem;
+    color: rgb(59, 59, 59);
+}
+
+.experience {
+    margin: 4% 0;
+    /* padding: .5rem; */
+}
+.experience h1 {
+    margin: 1rem 0;
+    padding: .5rem;
+}
+.experience h2 {
+    color: var(--main-theme-color);
+    font-weight: 900;
+    padding: .5rem;
+    /* border: 1px solid red; */
+}
+
+/* tools */
+
+#tools-outer-container {
+    /* border: 1px solid red; */
+    padding: .5rem;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: spc; */
+}
+.tool-container {
+    margin: 1.5rem 0;
+    padding: 0rem 7rem 7rem 0;
+    /* border: 1px solid red; */
+    min-width: 300px;
+}
+.tool-container ul li {
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+.tool-container ul li:nth-child(1) {
+    color: var(--main-theme-color);
+    font-weight: 700;
+}
+#tools-comment {
+    padding: 1rem 2.5rem;
+}
+@media screen and (max-width:909px) {
+    #tools-outer-container {
+        /* border: 1px solid red; */
+        display: block;
+    }
+    .tool-container {
+        padding: 1rem 7rem 2rem 0;
+    }
+    #tools-comment {
+        padding: .5rem 1.5rem;
+    }
+    .wrapper-container {
+        width: 90%;
+    }
 }

@@ -41,18 +41,17 @@ function toggleTheme(event) {
   for(var i=0; i<button.length; i++) {
     if (button[i].innerHTML == 'DARK THEME') {
         // dark theme
-        document.getElementById('body').classList.toggle("blackBackground")
-        document.getElementById('nav').classList.toggle("blackBackground")
         button[i].innerHTML = "LIGHT THEME"
         button[i].style.backgroundColor = "white"
         button[i].style.color = "black"
+        document.getElementById('body').classList.toggle("blackBackground");
+        document.getElementById('nav').classList.toggle("blackBackground");
       }else {
-        // document.getElementById("resume").classList.toggle()
-        document.getElementById('body').classList.toggle("blackBackground")
-        document.getElementById('nav').classList.toggle("blackBackground")
         button[i].innerHTML = "DARK THEME"
         button[i].style.backgroundColor = "black"
         button[i].style.color = "white"
+        document.getElementById('body').classList.toggle("blackBackground")
+        document.getElementById('nav').classList.toggle("blackBackground")
 
       }
   }

@@ -19,9 +19,10 @@
             </div>
             <ul id="overlayNav">
                 <li> <a href="#projects">.work()</a> </li>
-                <li> <a href="">.tools()</a> </li>
+                <li> <a href="#about-wrapper">.about()</a> </li>
+                <li> <a href="#tools-wrapper">.tools()</a> </li>
                 <li> <a href="">.contact()</a> </li>
-                <li> <a id="NavtoggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li>
+                <!-- <li> <a id="NavtoggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li> -->
             </ul>
         </div>
         <nav id="nav">
@@ -30,9 +31,10 @@
                     <a href="" class="toggletextColor">Sanath.Sasi</a>
                 </div>
                 <ul id="navlinks">
-                    <li> <a id="toggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li>
+                    <!-- <li> <a id="toggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li> -->
                     <li> <a href="" class="toggletextColor">.contact()</a> </li>
-                    <li> <a href="" class="toggletextColor">.tools()</a> </li>
+                    <li> <a href="#tools-wrapper" class="toggletextColor">.tools()</a> </li>
+                    <li> <a href="#about-wrapper" class="toggletextColor">.about()</a> </li>
                     <li> <a href="#projects" class="toggletextColor">.work()</a> </li>
                 </ul>
                 <div id="toggleButton">
@@ -54,12 +56,12 @@
         </section>
     </div>
 
-    <div class="projects" id="projects">
+    <div class="wrapper-container" id="projects">
         <p id="wrapper">  &lt;wrapper id="projects"></p>
         <div class="project">
             <div class="project-img project-img-one"></div>
             <div class="project-texts">
-                <h1>Ec Covid</h1>
+                <h1 class="toggletextColor">Ec Covid</h1>
                 <p class="comments">//Tech Stack</p>
                 <div class="tech-stacks">
                     <div><p class="tech-stack">Django</p></div>
@@ -79,7 +81,7 @@
         <div class="project">
             <div class="project-img project-img-two"></div>
             <div class="project-texts">
-                <h1>SmartBirth</h1>
+                <h1 class="toggletextColor">SmartBirth</h1>
                 <p class="comments">//Tech Stack</p>
                 <div class="tech-stacks">
                     <div><p class="tech-stack">Django</p></div>
@@ -100,7 +102,7 @@
             <div class="project-img project-img-three">
             </div>
             <div class="project-texts">
-                <h1>A Simple Weather App</h1>
+                <h1 class="toggletextColor">A Simple Weather App</h1>
                 <p class="comments">//Tech Stack</p>
                 <div class="tech-stacks">
                     <div><p class="tech-stack">React</p></div>
@@ -128,7 +130,65 @@
 
     </div>
 
+    <!-- about and experience -->
+    <div class="wrapper-container" id="about-wrapper">
+        <p id="wrapper">  &lt;wrapper id="about"></p>
+        <div id="about">
+            <br>
+            <p class="about-text">I'm a Software Developer who's been building industry utilized applications since my graduation. Since then, I've worked in startups and in multiple projects.</p>
 
+            <p class="comments">
+                // Keep reading for more details on my experience &nbsp;
+                <i class="fas fa-arrow-down"></i>
+            </p>
+            <div class="experience">
+                <h1>0. Zewia Software Solutions</h1>
+                <h2>Full Stack Developer</h2>
+                <p class="about-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia porro natus? Perspiciatis quos ex, vero qui aliquam voluptatum dolore nisi aut, unde, dolorum assumenda consequuntur ullam obcaecati eligendi dolorem. Modi, facere laudantium amet vero officiis vel dolorum eligendi facilis. </p>
+            </div>
+            <div class="experience">
+                <h1>1. SheBirth Pvt LLT</h1>
+                <h2>Web Developer</h2>
+                <p class="about-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia porro natus? Perspiciatis quos ex, vero qui aliquam voluptatum dolore nisi aut, unde, dolorum assumenda consequuntur ullam obcaecati eligendi dolorem. Modi, facere laudantium amet vero officiis vel dolorum eligendi facilis. </p>
+            </div>
+        </div>
+        <p id="wrapper">  &lt;wrapper></p>
+    </div>
+
+    <!-- techs -->
+    <div class="wrapper-container" id="tools-wrapper">
+        <p id="wrapper">  &lt;wrapper id="tools"></p>
+        <p class="comments" id="tools-comment">// Some of the tools that I have worked with.</p>
+        <div id="tools-outer-container">
+            <div class="tool-container">
+                <ul>
+                    <li>Back-End Technologies</li>
+                    <li>Python</li>
+                    <li>PostgreSQL</li>
+                    <li>Celery</li>
+                </ul>
+            </div>
+            <div class="tool-container">
+                <ul>
+                    <li>Front-End Technologies</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BootStrap 4</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>Ajax</li>
+                    <li>ReactJS</li>
+                </ul>
+            </div>
+            <div class="tool-container">
+                <ul>
+                    <li>Other Technologies</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+        <p id="wrapper">&lt;wrapper></p>
     <script src="main.js"></script>
 </body>
 </html>
