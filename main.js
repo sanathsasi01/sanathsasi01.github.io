@@ -1,7 +1,7 @@
 
 // var txt = "And, I'm a Software Developer!";
-var txt = "                    Graduate in Computer Science & Engineering and a Software Developer!";
-var speed = 20;
+var txt = "                    Graduate in Computer Science and Engineering & a Software Developer!";
+var speed = 10;
 
 window.onload = function() {
     typeWriter()
@@ -69,13 +69,13 @@ function CloseNav() {
 
 
 // navbar shodow on scroll
-// var myNav = document.getElementById("nav");
+var myNav = document.getElementById("nav");
 
-// window.onscroll = function() {
-//   "use strict";
-//   if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-//     myNav.classList.add("scroll");
-//   } else {
-//     myNav.classList.remove("scroll");
-//   }
-// };
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+    myNav.classList.add("scroll");
+  } else {
+    myNav.classList.remove("scroll");
+  }
+};

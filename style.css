@@ -63,13 +63,13 @@ section {
 /* =========navbar styles============  */
 nav {
     /* border: 1px solid red; */
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
     font-size: 1.2rem;
     font-weight: 800;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     background-color: white;
     z-index: 1;
 }
@@ -126,6 +126,7 @@ nav {
 }
 #overlay {
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
     z-index: 2;
@@ -149,7 +150,7 @@ nav {
     color: white;
 }
 .scroll {
-    box-shadow: 1px 2px 5px #b6b5b5;
+    box-shadow: 1px 1px 3px #b6b5b5;
 }
 #overlayNav {
     position: fixed;
@@ -199,6 +200,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 6rem;
 }
 #resume {
     padding: .8rem 3rem;
@@ -224,7 +226,11 @@ header p {
     /* color: red; */
     font-weight: 500;
     font-size: .5rem;
+    /* line-height: 2rem; */
 }
+/* .intro {
+    line-height: 1rem;
+} */
 #name {
     color: var(--main-theme-color);
     font-weight: 800;
@@ -241,9 +247,8 @@ header > div {
 }
 header p:nth-child(1) {
     font-size: 4rem;
-    /* line-height: 5rem; */
-    /* font-weight: 400; */
     font-weight: 400;
+    /* color: red; */
 }
 #typingText {
     font-size: 1.7rem;
@@ -266,7 +271,6 @@ header p:nth-child(1) {
       bottom: 15px;
     }
   }
-
 @media screen and (max-width:450px) {
     header {
         width: 80%;
@@ -275,8 +279,14 @@ header p:nth-child(1) {
     * {
         font-size: 14px;
     }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
     header p:nth-child(1) {
-        line-height: 3rem;
+        line-height: 4rem;
     }
     header div p {
         text-align: left;
@@ -297,7 +307,7 @@ header p:nth-child(1) {
 .wrapper-container {
     /* background-color: rebeccapurple; */
     width: 80%;
-    margin: 4% auto;
+    margin: 7rem auto;
 }
 
 #wrapper {
@@ -322,13 +332,13 @@ header p:nth-child(1) {
     height: 400px;
 }
 .project-img-one {
-    background-image: url('Images/banner-covid-19-1280x549.jpg');
+    background-image: url('Images/corona.jpg');
 
 }
 .project-texts {
     width: 50%;
     /* border: 1px solid rebeccapurple; */
-    padding: 0 1rem;
+    padding:  1rem;
 }
 .project-texts h1, .project-texts a {
     padding: .5rem;
@@ -360,11 +370,12 @@ header p:nth-child(1) {
 .project-links {
     display: flex;
     flex-wrap: wrap;
+    /* border: 1px solid red; */
 }
 .project-texts a {
     font-weight: 700;
     font-size: 1.2rem;
-    min-width: 200px;
+    min-width: 100px;
 }
 .project-texts a:hover {
     color: var(--main-theme-color);
@@ -374,7 +385,7 @@ header p:nth-child(1) {
     line-height: 1.5rem;
 }
 .project-img-two {
-    background-image: url('Images/Caesar-Salad-1280x720.jpg');
+    background-image: url('Images/babyfeet.jpg');
 }
 .project-img-three {
     background-image: url('Images/background.jpg');
@@ -433,20 +444,23 @@ header p:nth-child(1) {
     /* border: 1px solid red; */
     padding: .5rem;
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: spc; */
 }
 .tool-container {
-    margin: 1.5rem 0;
-    padding: 0rem 7rem 7rem 0;
+    /* margin: 1.5rem 0; */
+    margin-bottom: 2rem;
+    padding: 0rem 7rem 2rem 0;
     /* border: 1px solid red; */
     min-width: 300px;
 }
 .tool-container ul li {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     padding: .5rem 0;
+    color: rgb(59, 59, 59);
 }
 .tool-container ul li:nth-child(1) {
     color: var(--main-theme-color);
@@ -469,4 +483,127 @@ header p:nth-child(1) {
     .wrapper-container {
         width: 90%;
     }
+}
+
+@media screen and (max-width:350px) {
+    .tool-container {
+        padding: 0rem 0rem 2rem 0;
+    }
+}
+
+/* contact */
+
+#contacts-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto;
+    /* border: 1px solid yellowgreen; */
+}
+#contacts-text {
+    width: 50%;
+    color: rgb(50, 50, 50);
+}
+#contacts-text, #contact-form {
+    min-width: 400px;
+}
+#contacts-text h1 {
+    margin: 2rem 0;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+#contacts-text h1, #contacts-text p, #contacts-text div {
+    padding: .5rem;
+}
+#contacts-text div {
+    margin: 2rem 0;
+}
+
+.contact-para {
+    /* margin: 1.5rem 0; */
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#contacts-text div i {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+#contacts-text div i:hover {
+    color: var(--main-theme-color);
+    cursor: pointer;
+}
+
+#contact-form {
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 35%;
+}
+#contacts-inner-container {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+input{
+    padding: .5rem;
+    width: 100%;
+    margin: 1rem 0;
+    outline: none;
+}
+textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    margin: 1rem 0;
+    padding: .5rem;
+}
+#submit {
+    width: 100%;
+    margin: .5rem 0;
+    padding: .6rem 0;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    #contacts-text, #contact-form {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+/* foooter */
+footer {
+    position:relative;  
+    bottom:0;
+    width:100%;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    /* background:#6cf; */
+}
+
+footer div {
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    min-width: 300px;
+    font-size: 1.3rem;
+}
+.fa-heart {
+    color: red;
+}
+
+footer p {
+    margin: 1.8rem 0;
+}
+
+footer p, footer span {
+    font-weight: 500;
 }
