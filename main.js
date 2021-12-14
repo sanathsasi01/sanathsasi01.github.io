@@ -1,6 +1,6 @@
 
 // var txt = "And, I'm a Software Developer!";
-var txt = "                    Graduate in Computer Science and Engineering & a Software Developer!";
+var txt = "                    Graduate in Computer Science and Engineering && a Software Developer!";
 var speed = 10;
 
 window.onload = function() {
@@ -79,3 +79,4 @@ window.onscroll = function() {
     myNav.classList.remove("scroll");
   }
 };
+

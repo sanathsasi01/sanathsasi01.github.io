@@ -3,6 +3,7 @@
 /* rxbxykdislvbwscn */
 :root {
     --background-black: #151515;
+    /* --main-theme-color: #396EB0; */
     --main-theme-color: #610094;
   }
 * {
@@ -65,11 +66,13 @@ nav {
     /* border: 1px solid red; */
     position: fixed;
     width: 100%;
-    top: 0;
+    /* height: 10vh; */
+    top: 0%;
     overflow: hidden;
     font-size: 1.2rem;
     font-weight: 800;
     padding: 1.5rem 0;
+    margin-top: 0;
     background-color: white;
     z-index: 1;
 }
@@ -200,7 +203,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 #resume {
     padding: .8rem 3rem;
@@ -228,9 +231,6 @@ header p {
     font-size: .5rem;
     /* line-height: 2rem; */
 }
-/* .intro {
-    line-height: 1rem;
-} */
 #name {
     color: var(--main-theme-color);
     font-weight: 800;
@@ -242,7 +242,7 @@ header {
     position: relative;
 }
 header > div {
-    /* border: 1px solid green; */
+    /* border: 1px solid green;  */
     margin-top: 50px;
 }
 header p:nth-child(1) {
@@ -271,9 +271,15 @@ header p:nth-child(1) {
       bottom: 15px;
     }
   }
-@media screen and (max-width:450px) {
+
+@media screen and (max-width:800px) {
+    #typingText {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:565px) {
     header {
-        width: 80%;
+        width: 90%;
         /* padding: 20px 0; */
     }
     * {
@@ -286,7 +292,11 @@ header p:nth-child(1) {
         font-size: 1.2rem;
     }
     header p:nth-child(1) {
-        line-height: 4rem;
+        line-height: 3rem;
+        font-size: 3rem;
+    }
+    #name {
+        font-size: 3rem;
     }
     header div p {
         text-align: left;
@@ -303,17 +313,18 @@ header p:nth-child(1) {
 }
 
 
+
 /* projects styles */
 .wrapper-container {
-    /* background-color: rebeccapurple; */
-    width: 80%;
+    /* background-color: yellow; */
+    width: 90%;
     margin: 7rem auto;
 }
 
 #wrapper {
     color: var(--main-theme-color);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* letter-spacing: .5rem; */
 }
 
@@ -481,7 +492,7 @@ header p:nth-child(1) {
         padding: .5rem 1.5rem;
     }
     .wrapper-container {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -569,6 +580,7 @@ textarea {
     background-color: black;
     letter-spacing: .2rem;
     cursor: pointer;
+    border: none;
 }
 
 @media screen and (max-width:1000px) {
