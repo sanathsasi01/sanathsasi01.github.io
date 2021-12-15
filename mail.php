@@ -3,10 +3,11 @@
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "sanathsasi01@mail.com";
+$to = "sanathsasi01@gmail.com";
 $subject = "Mail From website";
-$txt ="Name : ". $name . "\r\n  Email : " . $email . "\r\n Message :" . $message;
-$headers = "From: sanathzewia@gmail.com"
+// $txt ="Name : ". $name . "\r\n  Email : " . $email . "\r\n Message :" . $message;
+$email_body = "You have received an email from " .$name. ".\n\n" .$message;
+$headers = "From: " .$email;
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
