@@ -34,28 +34,59 @@
                     <!-- <li> <a id="toggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li> -->
                     <li> <a href="#contacts-wrapper" class="toggletextColor">.contact()</a> </li>
                     <li> <a href="#tools-wrapper" class="toggletextColor">.tools()</a> </li>
-                    <li> <a href="#about-wrapper" class="toggletextColor">.about()</a> </li>
                     <li> <a href="#projects" class="toggletextColor">.work()</a> </li>
+                    <li> <a href="#about-wrapper" class="toggletextColor">.about()</a> </li>
                 </ul>
                 <div id="toggleButton">
                     <button class="toggletextColor" onclick="OpenNav()">.find( )</button>
                 </div>
             </div>
         </nav>
+
         <section class="one">
             <header>
                 <div>
-                    <p class="toggletextColor intro">Hey there, I'm <span id="name">Sanath Sasi</span></p>
+                    <p class="toggletextColor intro">Hello, I'm <span id="name">Sanath sasi</span></p>
                     <p id="typingText" class="toggletextColor"></p>
                     <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" class="toggletextColor" target="blank">MY RESUME</a>
                     <div id="arrowContainer">
-                        <i class="fas fa-angle-double-down toggletextColor" id="arrow"></i>
+                        <!-- <i class="fas fa-angle-double-down toggletextColor" id="arrow"></i> -->
+                        <!-- <i class="fas fa-arrow-down" id="arrow"></i> -->
+                        <i class="fas fa-chevron-down" id="arrow"></i>
                     </div>
                 </div>
             </header>
         </section>
     </div>
 
+    <!-- about and experience -->
+    <div class="wrapper-container" id="about-wrapper">
+        <p id="wrapper">  &lt;wrapper id="about"></p>
+        <div id="about">
+            <br>
+            <p class="about-text">I'm a Software Developer who's been building industry utilized applications since my graduation. Since then, I've worked in startups and in multiple projects.</p>
+
+            <p class="comments">
+                // Keep reading for more details on my experience &nbsp;
+                <i class="fas fa-arrow-down"></i>
+            </p>
+            <div class="experience">
+                <h1>0. Zewia Software Solutions</h1>
+                <h2>Full Stack Developer</h2>
+                <h3>2020</h3>
+                <p class="about-text"> In the mid of autumn 2020 I began my position at Zewia Software Solutions. I worked there for a while as a full stack developer with techs like Python, Django, JavaScript, Css, BootStrap4. This position required everyone on the team to take on many roles and adapt quickly, which led to me managing software projects from inception to deployment. </p>
+            </div>
+            <div class="experience">
+                <h1>1. SheBirth LLT</h1>
+                <h2>Web Developer</h2>
+                <h3>2021</h3>
+                <p class="about-text">In the end of spring 2021 I started working as full time Backend developer. Genereally, I'm spending most of my time building API's and Backend logic for our applications, while dabbling in some Front-End Technologies like the basics of ReactJS, Axios and responsive designs.</p>
+            </div>
+        </div>
+        <p id="wrapper">  &lt;wrapper></p>
+    </div>
+
+    <!-- works -->
     <div class="wrapper-container" id="projects">
         <p id="wrapper">  &lt;wrapper id="works"></p>
         <div class="project">
@@ -129,31 +160,6 @@
 
     </div>
 
-    <!-- about and experience -->
-    <div class="wrapper-container" id="about-wrapper">
-        <p id="wrapper">  &lt;wrapper id="about"></p>
-        <div id="about">
-            <br>
-            <p class="about-text">I'm a Software Developer who's been building industry utilized applications since my graduation. Since then, I've worked in startups and in multiple projects.</p>
-
-            <p class="comments">
-                // Keep reading for more details on my experience &nbsp;
-                <i class="fas fa-arrow-down"></i>
-            </p>
-            <div class="experience">
-                <h1>0. Zewia Software Solutions</h1>
-                <h2>Full Stack Developer</h2>
-                <p class="about-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia porro natus? Perspiciatis quos ex, vero qui aliquam voluptatum dolore nisi aut, unde, dolorum assumenda consequuntur ullam obcaecati eligendi dolorem. Modi, facere laudantium amet vero officiis vel dolorum eligendi facilis. </p>
-            </div>
-            <div class="experience">
-                <h1>1. SheBirth LLT</h1>
-                <h2>Web Developer</h2>
-                <p class="about-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae mollitia porro natus? Perspiciatis quos ex, vero qui aliquam voluptatum dolore nisi aut, unde, dolorum assumenda consequuntur ullam obcaecati eligendi dolorem. Modi, facere laudantium amet vero officiis vel dolorum eligendi facilis. </p>
-            </div>
-        </div>
-        <p id="wrapper">  &lt;wrapper></p>
-    </div>
-
     <!-- techs -->
     <div class="wrapper-container" id="tools-wrapper">
         <p id="wrapper">  &lt;wrapper id="tools"></p>
@@ -176,7 +182,6 @@
                     <li>JavaScript</li>
                     <li>JQuery</li>
                     <li>Ajax</li>
-                    <li>ReactJS</li>
                 </ul>
             </div>
             <div class="tool-container">
@@ -217,6 +222,8 @@
            </div>
         <p id="wrapper">  &lt;wrapper></p>
     </div>
+
+    <!-- footer -->
     <footer>
         <div>
             &copy; <span>2021 Sanath Sasi. All rights reserved.</span>

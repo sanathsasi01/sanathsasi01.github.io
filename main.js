@@ -1,6 +1,6 @@
 
 // var txt = "And, I'm a Software Developer!";
-var txt = "                    Graduate in Computer Science and Engineering && a Software Developer!";
+var txt = "                    I'm a Computer Science Engineer & a Software Developer!";
 var speed = 10;
 
 window.onload = function() {
@@ -8,9 +8,9 @@ window.onload = function() {
 }
 var anchorTag = document.getElementsByTagName('a');
 for (var i = 0; i < anchorTag.length; i++) {
-  // anchorTag[i].addEventListener('click', function(e) {
-  //   e.preventDefault()
-  // })
+  anchorTag[i].addEventListener('click', function(e) {
+    // e.preventDefault()
+  })
 }
 function typeWriter(){
     if (i < txt.length) {

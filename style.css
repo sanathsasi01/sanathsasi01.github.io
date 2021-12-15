@@ -3,8 +3,9 @@
 /* rxbxykdislvbwscn */
 :root {
     --background-black: #151515;
-    /* --main-theme-color: #396EB0; */
-    --main-theme-color: #610094;
+    --main-theme-color: #F95959;
+    /* --main-theme-color: #7971EA; kolam */
+    /* --main-theme-color: #610094;  original*/
   }
 * {
     margin: 0;
@@ -15,6 +16,7 @@
     font-family: 'Fira Code', monospace;
     font-family: 'Inconsolata', monospace;
 }
+
 
 a {
     text-decoration: none;
@@ -31,9 +33,13 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+    width: 0px;
     background: transparent; 
 }
+/* ::-webkit-scrollbar-thumb {
+    background: rgba(102, 51, 153,.8); 
+  } */
+  
 /* =================dark/light theme============== */
 .blackBackground {
     background-color: var(--background-black);
@@ -241,9 +247,11 @@ header {
     margin: auto;
     position: relative;
 }
+
 header > div {
     /* border: 1px solid green;  */
-    margin-top: 50px;
+    margin-top: 5rem;
+    /* padding-right: 10%; */
 }
 header p:nth-child(1) {
     font-size: 4rem;
@@ -281,6 +289,9 @@ header p:nth-child(1) {
     header {
         width: 90%;
         /* padding: 20px 0; */
+    }
+    #nav-inner-container {
+        width: 90%;
     }
     * {
         font-size: 14px;
@@ -435,11 +446,11 @@ header p:nth-child(1) {
 }
 
 .experience {
-    margin: 4% 0;
+    margin: 5% 0;
     /* padding: .5rem; */
 }
-.experience h1 {
-    margin: 1rem 0;
+.experience h1,.experience h3 {
+    margin: .3rem 0;
     padding: .5rem;
 }
 .experience h2 {
@@ -492,7 +503,7 @@ header p:nth-child(1) {
         padding: .5rem 1.5rem;
     }
     .wrapper-container {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -619,3 +630,4 @@ footer p {
 footer p, footer span {
     font-weight: 500;
 }
+
