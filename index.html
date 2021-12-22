@@ -11,27 +11,29 @@
     <title>Sanath sasi</title>
 </head>
 <body id="body">
-    <a class="toggleText" style="display: none;"></a>
+    <!-- <a class="toggleText" style="display: none;"></a> -->
+    <div id="top"></div>
     <div class="mainContainer">
         <div id="overlay">
             <div id="closeNav">
                 <button onclick="CloseNav()">.close( )</button>
             </div>
             <ul id="overlayNav">
-                <li> <a href="#about-wrapper" onclick="CloseNav()">.about()</a> </li>
-                <li> <a href="#projects" onclick="CloseNav()">.work()</a> </li>
-                <li> <a href="#tools-wrapper" onclick="CloseNav()">.tools()</a> </li>
-                <li> <a href="#contacts-wrapper" onclick="CloseNav()">.contact()</a> </li>
-                <!-- <li> <a id="NavtoggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li> -->
+                <li> <a href="#about-wrapper" onclick="CloseNav()" class="overlay-links">.about()</a> </li>
+                <li> <a href="#projects" onclick="CloseNav()" class="overlay-links">.work()</a> </li>
+                <li> <a href="#tools-wrapper" onclick="CloseNav()" class="overlay-links">.tools()</a> </li>
+                <li> <a href="#contacts-wrapper" onclick="CloseNav()" class="overlay-links">.contact()</a> </li>
+                <!-- <li> <a id="NavtoggleTheme" class="NavtoggleTheme toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li> -->
+                <li> <a id="overlaybtn" class="overlay-links toggleTheme toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li>
             </ul>
         </div>
         <nav id="nav">
             <div id="nav-inner-container">
                 <div id="brand">
-                    <a href="" class="toggletextColor">Sanath.Sasi</a>
+                    <a href="#top" class="toggletextColor">Sanath.Sasi</a>
                 </div>
                 <ul id="navlinks">
-                    <!-- <li> <a id="toggleTheme" class="toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li> -->
+                    <li> <a class="toggleTheme toggleText toggletextColor" onclick="toggleTheme()">DARK THEME</a> </li>
                     <li> <a href="#contacts-wrapper" class="toggletextColor">.contact()</a> </li>
                     <li> <a href="#tools-wrapper" class="toggletextColor">.tools()</a> </li>
                     <li> <a href="#projects" class="toggletextColor">.work()</a> </li>
@@ -50,8 +52,6 @@
                     <p id="typingText" class="toggletextColor"></p>
                     <a href="https://drive.google.com/file/d/18Zz9VyM3ZevuO4EcPndbgnXA0tYWyk9H/view?usp=sharing" id="resume" class="toggletextColor" target="blank">MY RESUME</a>
                     <div id="arrowContainer">
-                        <!-- <i class="fas fa-angle-double-down toggletextColor" id="arrow"></i> -->
-                        <!-- <i class="fas fa-arrow-down" id="arrow"></i> -->
                         <i class="fas fa-chevron-down" id="arrow"></i>
                     </div>
                 </div>
@@ -64,23 +64,23 @@
         <p id="wrapper">  &lt;wrapper id="about"></p>
         <div id="about">
             <br>
-            <p class="about-text">I'm a Software Developer who's been building industry utilized applications since my graduation. Since then, I've worked in startups and in multiple projects.</p>
+            <p class="about-text toggletextColor">I'm a Software Developer who's been building industry utilized applications since my graduation. Since then, I've worked in startups and in multiple projects.</p>
 
             <p class="comments">
                 // Keep reading for more details on my experience &nbsp;
                 <i class="fas fa-arrow-down"></i>
             </p>
             <div class="experience">
-                <h1>0. Zewia Software Solutions</h1>
+                <h1 class="toggletextColor">0. Zewia Software Solutions</h1>
                 <h2>Full Stack Developer</h2>
-                <h3>2020</h3>
-                <p class="about-text"> In the mid of autumn 2020 I began my position at Zewia Software Solutions. I worked there for a while as a full stack developer with techs like Python, Django, JavaScript, Css, BootStrap4. This position required everyone on the team to take on many roles and adapt quickly, which led to me managing software projects from inception to deployment. </p>
+                <h3 class="toggletextColor">2020</h3>
+                <p class="about-text toggletextColor"> In the mid of autumn 2020 I began my position at Zewia Software Solutions. I worked there for a while as a full stack developer with techs like Python, Django, JavaScript, Css, BootStrap4. This position required everyone on the team to take on many roles and adapt quickly, which led to me managing software projects from inception to deployment. </p>
             </div>
             <div class="experience">
-                <h1>1. SheBirth LLT</h1>
+                <h1 class="toggletextColor">1. SheBirth LLT</h1>
                 <h2>Web Developer</h2>
-                <h3>2021</h3>
-                <p class="about-text">In the end of spring 2021 I started working as full time Backend developer. Genereally, I'm spending most of my time building API's and Backend logic for our applications, while dabbling in some Front-End Technologies like the basics of ReactJS, Axios and responsive designs.</p>
+                <h3 class="toggletextColor">2021</h3>
+                <p class="about-text toggletextColor">In the end of spring 2021 I started working as full time Backend developer. Genereally, I'm spending most of my time building API's and Backend logic for our applications, while dabbling in some Front-End Technologies like the basics of ReactJS, Axios and responsive designs.</p>
             </div>
         </div>
         <p id="wrapper">  &lt;wrapper></p>
@@ -146,10 +146,10 @@
                 </p>
                 <p class="comments">// See it in action</p>
                 <div class="project-links">
-                    <a href="https://my-first-whether-app.netlify.app" target="blank">
+                    <a href="https://my-first-whether-app.netlify.app" target="blank" class="toggletextColor">
                         visit the site <i class="fas fa-link"></i>
                     </a>
-                    <a href="https://github.com/sanathsasi01/Open-Weather.git"  target="blank">
+                    <a href="https://github.com/sanathsasi01/Open-Weather.git"  target="blank" class="toggletextColor">
                         see the code <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -168,27 +168,27 @@
             <div class="tool-container">
                 <ul>
                     <li>Back-End Technologies</li>
-                    <li>Python</li>
-                    <li>PostgreSQL</li>
-                    <li>Celery</li>
+                    <li class="techs toggletextColor">Python</li>
+                    <li class="techs toggletextColor">PostgreSQL</li>
+                    <li class="techs toggletextColor">Celery</li>
                 </ul>
             </div>
             <div class="tool-container">
                 <ul>
                     <li>Front-End Technologies</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>BootStrap 4</li>
-                    <li>JavaScript</li>
-                    <li>JQuery</li>
-                    <li>Ajax</li>
+                    <li class="techs toggletextColor">HTML</li>
+                    <li class="techs toggletextColor">CSS</li>
+                    <li class="techs toggletextColor">BootStrap 4</li>
+                    <li class="techs toggletextColor">JavaScript</li>
+                    <li class="techs toggletextColor">JQuery</li>
+                    <li class="techs toggletextColor">Ajax</li>
                 </ul>
             </div>
             <div class="tool-container">
                 <ul>
                     <li>Other Technologies</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
+                    <li class="techs toggletextColor">Git</li>
+                    <li class="techs toggletextColor">GitHub</li>
                 </ul>
             </div>
         </div>
@@ -200,22 +200,22 @@
         <p id="wrapper">  &lt;wrapper id="contact"></p>
            <div id="contacts-container">
                 <div id="contacts-text">
-                    <h1>Let's get in touch <i class="fas fa-cocktail"></i></i></h1>
-                    <p class="contact-para">Have any questions?</p>
-                    <p class="contact-para">Shoot me an email or find me around the web.</p>
+                    <h1 class="toggletextColor">Let's get in touch <i class="fas fa-cocktail"></i></i></h1>
+                    <p class="contact-para toggletextColor">Have any questions?</p>
+                    <p class="contact-para toggletextColor">Shoot me an email or find me around the web.</p>
                     <p class="comments">// Some socials</span>
                     <div>
-                        <a href="https://www.linkedin.com/in/sanath-sasi-428022191" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/sanathsasi01" target="blank"><i class="fab fa-github"></i>   </a>
+                        <a href="https://www.linkedin.com/in/sanath-sasi-428022191" target="blank"><i class="fab fa-linkedin-in toggletextColor"></i></a>
+                        <a href="https://github.com/sanathsasi01" target="blank"><i class="fab fa-github toggletextColor"></i>   </a>
                     </div>
                 </div>
-                <div id="contact-form">
+                <div class="contact-form">
                     <div id="contacts-inner-container">
                         <form action="https://formsubmit.co/sanathsasi01@gmail.com" method="post">
                             <input type="text" name="name" id="sender-name" placeholder="Name" required autocomplete="off"> <br>
                             <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off"> <br>
                             <textarea name="message" id="message" cols="30" rows="10" autocomplete="off" placeholder="Message"></textarea> <br>
-                            <button type="submit" id="submit">SEND</button>
+                            <button type="submit" class="submit">SEND</button>
                         </form>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
 
     <!-- footer -->
     <footer>
-        <div>
+        <div class="toggletextColor">
             &copy; <span>2021 Sanath Sasi. All rights reserved.</span>
             <p>Built with <i class="fas fa-heart"></i> in India, Kerala.</p>
         </div>

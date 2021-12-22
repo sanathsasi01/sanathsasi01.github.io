@@ -1,6 +1,6 @@
 
 // var txt = "And, I'm a Software Developer!";
-var txt = "                    I'm a Computer Science Engineer & a Software Developer!";
+var txt = "                    I'm a Computer Science Engineer && a Software Developer!";
 var speed = 10;
 
 window.onload = function() {
@@ -33,28 +33,38 @@ function typeWriter(){
 // document.getElementById("defaultOpen").click();
 
 function toggleTheme(event) {
-  var button = document.getElementsByClassName('toggleText')
+  document.getElementById('overlay').style.visibility = "hidden"
+  document.getElementById('arrow').classList.toggle('arrowToggle')
   var texts = document.getElementsByClassName('toggletextColor')
   for(var i=0; i<texts.length; i++) {
     texts[i].classList.toggle("TextColorSwitch")
   }
+  // tech stacks
+  var techStacks = document.getElementsByClassName('tech-stack')
+  for(var i=0; i < techStacks.length; i++) {
+    techStacks[i].classList.toggle("tech-stack-toggle")
+  }
+
+  document.getElementById('body').classList.toggle("blackBackground");
+  document.getElementById('nav').classList.toggle("blackBackground");
+  var button = document.getElementsByClassName('toggleText')
   for(var i=0; i<button.length; i++) {
+    button[i].classList.toggle('toggleBtn')
     if (button[i].innerHTML == 'DARK THEME') {
-        // dark theme
         button[i].innerHTML = "LIGHT THEME"
-        button[i].style.backgroundColor = "white"
-        button[i].style.color = "black"
-        document.getElementById('body').classList.toggle("blackBackground");
-        document.getElementById('nav').classList.toggle("blackBackground");
       }else {
         button[i].innerHTML = "DARK THEME"
-        button[i].style.backgroundColor = "black"
-        button[i].style.color = "white"
-        document.getElementById('body').classList.toggle("blackBackground")
-        document.getElementById('nav').classList.toggle("blackBackground")
-
       }
   }
+  var submitbtn = document.getElementsByClassName('submit')
+  for(var i=0; i<submitbtn.length; i++) {
+    submitbtn[i].classList.toggle('toggleBtn')
+  }
+  var form = document.getElementsByClassName('contact-form');
+  for(var i=0; i<form.length; i++) {  
+    form[i].classList.toggle('form-border');
+  }
+
 }
 function OpenNav() {
   // document.getElementById('toggleButton').style.display = "none"
@@ -71,12 +81,12 @@ function CloseNav() {
 // navbar shodow on scroll
 var myNav = document.getElementById("nav");
 
-window.onscroll = function() {
-  "use strict";
-  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-    myNav.classList.add("scroll");
-  } else {
-    myNav.classList.remove("scroll");
-  }
-};
+// window.onscroll = function() {
+//   "use strict";
+//   if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+//         myNav.classList.add("scroll");
+//   } else {
+//     myNav.classList.remove("scroll");
+//   }
+// };
 

@@ -4,7 +4,8 @@
 :root {
     --background-black: #151515;
     --main-theme-color: #F95959;
-    /* --main-theme-color: #7971EA; kolam */
+    --white : #FFFFFF
+    /* --main-theme-color: #7971EA; kolam */ 
     /* --main-theme-color: #610094;  original*/
   }
 * {
@@ -40,19 +41,7 @@ html {
     background: rgba(102, 51, 153,.8); 
   } */
   
-/* =================dark/light theme============== */
-.blackBackground {
-    background-color: var(--background-black);
-}
-.whiteBackground {
-    background-color: white;
-}
-.TextColorSwitch {
-    color: white;
-}
-.whiteTextToggle {
-    color: black;
-}
+
 /* nav {
     background-color: #171414;
 } */
@@ -68,6 +57,20 @@ section {
 }
 
 /* =========navbar styles============  */
+.overlay-links{
+    color: var(--white);
+    display: block;
+    text-align: right;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+#overlaybtn {
+    /* width: 180px; */
+    padding: .8rem 2rem;
+    float: right;
+}
+
 nav {
     /* border: 1px solid red; */
     position: fixed;
@@ -86,6 +89,7 @@ nav {
     width: 80%;
     margin: auto;
     display: flex;
+    /* border: 1px solid red; */
 }
 
 #navlinks {
@@ -96,6 +100,9 @@ nav {
     width: 30%;
     font-size: 1.6rem;
 }
+#brand a:hover {
+    color: var(--main-theme-color);
+}
 
 #navlinks li {
     float: right;
@@ -103,24 +110,26 @@ nav {
     padding: 0 1.5rem;
     /* background-color: grey; */
 }
+#navlinks li:not(:first-child) a:hover {
+    color: var(--main-theme-color);
+}
 
-#toggleTheme {
-    background-color: black;
-    color: white;
+
+.toggleTheme {
+    color: var(--white);
+    background-color: var(--background-black);
     padding: .5rem 1.5rem;
     font-weight: 500;
     font-size: 1.1rem;
     letter-spacing: .1rem;
-    border: 1px solid black;
+    border: 1px solid var(--background-black);
     cursor: pointer;
-    /* display: inline-block; */
+}
+.toggleTheme:hover {
+    color: var(--background-black);
+    background-color: var(--white);
 }
 
-#toggleTheme:hover {
-    background-color: white;
-    color: black;
-    /* border: 1px solid black; */
-}
 #toggleButton {
     width: 70%;
     display: none;
@@ -156,7 +165,7 @@ nav {
     border: none;
     font-size: 1.5rem;
     font-weight: 800;
-    color: white;
+    color: var(--white);
 }
 .scroll {
     box-shadow: 1px 1px 3px #b6b5b5;
@@ -169,29 +178,22 @@ nav {
 #overlayNav li {
     margin: 3rem 0;
 }
-#overlayNav li a{
-    /* background-color: red; */
-    /* line-height: 4rem; */
-    color: white;
-    display: block;
-    text-align: right;
-    /* width: 80%; */
-    margin: auto;
-    font-size: 1.5rem;
-    font-weight: 800;
+
+
+#overlayNav li a:hover {
+    color: var(--main-theme-color);
 }
 #NavtoggleTheme {
     display: block;
-    /* background-color: white; */
-    padding: .3rem .5rem;
+    padding: .4rem .6rem;
     max-width: 200px;
     float: right;
     letter-spacing: .1rem;
     cursor: pointer;
-    border: 1px solid white;
-    color: red;
+    border: .5px solid var(--white);
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 1290px) {
     #navlinks {
         display: none;
     }
@@ -214,7 +216,7 @@ nav {
 #resume {
     padding: .8rem 3rem;
     border: 1px solid transparent;
-    color: white;
+    color: var(--white);
     background-color: var(--main-theme-color);
     outline: none;
     margin: 1rem 0;
@@ -227,7 +229,7 @@ nav {
 #resume:hover {
     cursor: pointer;
     /* padding: .8rem 4rem; */
-    background-color: white;
+    background-color: var(--white);
     color: var(--main-theme-color);
     border: 1px solid var(--main-theme-color);
 }
@@ -272,6 +274,12 @@ header p:nth-child(1) {
     position: relative;
     visibility: hidden;
 }
+/* .fa-chevron-down {
+    color: var(--background-black);
+} */
+.arrowToggle {
+    color: var(--white);
+}
 @keyframes MoveUpDown {
     0%, 100% {
       bottom: 0;
@@ -280,7 +288,11 @@ header p:nth-child(1) {
       bottom: 15px;
     }
   }
-
+@media screen and (max-width:897px) {
+    header div {
+        margin-top: 8rem;
+    }
+}
 @media screen and (max-width:800px) {
     #typingText {
         font-size: 1.2rem;
@@ -351,6 +363,7 @@ header p:nth-child(1) {
     width: 50%;
     /* min-width: 400px; */
     background-size: cover;
+    /* background-repeat: no; */
     /* min-width: 450px; */
     height: 400px;
 }
@@ -378,10 +391,15 @@ header p:nth-child(1) {
 }
 .tech-stack {
     background-color: var(--background-black);
-    color: white;
+    color: var(--white);
     padding: .5rem .7rem;
     min-width: 80px;
     text-align: center;
+}
+.tech-stack-toggle {
+    background-color: #F1F6F9;
+    color: var(--background-black);
+    padding: .4rem .7rem;
 }
 
 
@@ -483,6 +501,8 @@ header p:nth-child(1) {
     font-size: 1.4rem;
     font-weight: 600;
     padding: .5rem 0;
+}
+.techs {
     color: rgb(59, 59, 59);
 }
 .tool-container ul li:nth-child(1) {
@@ -529,7 +549,7 @@ header p:nth-child(1) {
     width: 50%;
     color: rgb(50, 50, 50);
 }
-#contacts-text, #contact-form {
+#contacts-text, .contact-form {
     min-width: 400px;
 }
 #contacts-text h1 {
@@ -559,18 +579,21 @@ header p:nth-child(1) {
     cursor: pointer;
 }
 
-#contact-form {
-    border: 2px solid black;
+.contact-form {
+    border: 1px solid var(--background-black);
     margin: 0 auto;
     padding: 4rem 0;
     width: 35%;
+}
+.form-border {
+    border: 1px solid var(--white);
+    
 }
 #contacts-inner-container {
     width: 90%;
     margin: auto;
     /* border: 1px solid red; */
 }
-
 input{
     padding: .5rem;
     width: 100%;
@@ -584,20 +607,25 @@ textarea {
     margin: 1rem 0;
     padding: .5rem;
 }
-#submit {
+.submit {
     width: 100%;
     margin: .5rem 0;
     padding: .6rem 0;
     font-weight: 700;
-    color: white;
-    background-color: black;
+    color: var(--white);
+    background-color: var(--background-black);
     letter-spacing: .2rem;
     cursor: pointer;
     border: none;
+    border: 1px solid black;
+}
+.submit:hover {
+    background-color: var(--white);
+    color: var(--background-black);
 }
 
 @media screen and (max-width:1000px) {
-    #contacts-text, #contact-form {
+    #contacts-text, .contact-form {
         min-width: 0;
         width: 100%;
     }
@@ -631,5 +659,29 @@ footer p {
 
 footer p, footer span {
     font-weight: 500;
+}
+
+/* =================dark/light theme============== */
+.blackBackground {
+    background-color: var(--background-black);
+}
+.whiteBackground {
+    background-color: var(--white);
+}
+.TextColorSwitch {
+    color: var(--white);
+}
+.whiteTextToggle {
+    color: var(--background-black);
+}
+
+.toggleBtn {
+    background-color: var(--white);
+    color: var(--background-black);
+}
+.toggleBtn:hover {
+    color: var(--white);
+    background-color: var(--background-black);
+    border: 1px solid var(--white);
 }
 
