@@ -3,6 +3,7 @@
 /* rxbxykdislvbwscn */
 :root {
     --background-black: #151515;
+    /* --background-black: black; */
     --main-theme-color: #F95959;
     --white : #FFFFFF
     /* --main-theme-color: #7971EA; kolam */ 
@@ -69,6 +70,7 @@ section {
     /* width: 180px; */
     padding: .8rem 2rem;
     float: right;
+    background-color: black;
 }
 
 nav {
@@ -430,6 +432,9 @@ header p:nth-child(1) {
 }
 .project-img-three {
     background-image: url('Images/background.jpg');
+}
+.project-img-four {
+    background-image: url('Images/portblack.png');
 }
 @media screen and (max-width:1125px) {
     .project-img {
