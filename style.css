@@ -3,8 +3,8 @@
 /* rxbxykdislvbwscn */
 :root {
     --background-black: #151515;
-    /* --background-black: black; */
     --main-theme-color: #F95959;
+    /* --main-theme-color: rgb(49, 130, 206); */
     --white : #FFFFFF
     /* --main-theme-color: #7971EA; kolam */ 
     /* --main-theme-color: #610094;  original*/
@@ -344,6 +344,7 @@ header p:nth-child(1) {
 .wrapper-container {
     /* background-color: yellow; */
     width: 90%;
+    max-width: 1700px;
     margin: 7rem auto;
 }
 
@@ -437,6 +438,7 @@ header p:nth-child(1) {
 @media screen and (max-width:1125px) {
     .project-img {
         width: 100%;
+        max-width: 100%;
     }
     .project-texts {
         width: 100%;
