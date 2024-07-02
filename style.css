@@ -429,11 +429,14 @@ header p:nth-child(1) {
 .project-img-two {
     background-image: url('Images/babyfeet.jpg');
 }
-.project-img-three {
-    background-image: url('Images/background.jpg');
-}
 .project-img-four {
+    background-image: url('Images/TI.jpg');
+}
+.project-img-three {
     background-image: url('Images/portblack.png');
+}
+.project-img-five {
+    background-image: url('Images/ota.jpg');
 }
 @media screen and (max-width:1125px) {
     .project-img {
